@@ -57,23 +57,30 @@ body {
 
 .dish-date {}*/
 
-.meal-info    {
+.meal-info {
     background-color: grey;
 }
 
-.rate-meal    {
+.rate-meal {
     background-color: lightgrey;
     margin-top: 15px;
 }
 
-#play-video    {
+#play-video {
     font-size: 60px;
     color: #1db8ab;
 }
 
-.stars    {
+.stars {
     color: gold;
     font-size: 50px;
+}
+
+.logo-header {
+    font-family: "Exo", sans-serif;
+    font-size: 90px;
+    font-weight: 400;
+    color: black;
 }
 
 /*----------------------------------------------------------------------------------------------------*/
@@ -146,9 +153,10 @@ header {
     top: 25px;
     height: 160px;
     color: white;
-    /*background: url();*/
+    background: url("../images/background4.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
 
 /*----------------------------------------------------------------------------------------------------*/
 
