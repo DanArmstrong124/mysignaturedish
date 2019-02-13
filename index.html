@@ -31,7 +31,7 @@
                         <a href="food-example.html" class="hvr-sweep-to-bottom"><i class="fa fa-cutlery" aria-hidden="true"></i><span>Dishes</span></a>
                     </li>
                     <li class="col-xs-6 col-sm-2 ui-menu-colour-contact menuitem">
-                        <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-comments" aria-hidden="true"></i><span>Contact Us</span></a>
+                        <a href="#" data-toggle="modal" data-target="#myModal" class="hvr-sweep-to-bottom"><i class="fa fa-comments" aria-hidden="true"></i><span>Contact Us</span></a>
                     </li>
                     <li class="col-xs-6 col-sm-2 ui-menu-colour-account menuitem">
                         <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-user-circle" aria-hidden="true"></i><span>Account</span></a>
@@ -117,32 +117,41 @@
     </footer>
 
 
+    <!--JavaScriptCDN and JQueryCDN-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
     <!--Modal Setup-->
-    <!--    
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    <h4 class="modal-title" id="myModalLabel">Get In Touch</h4>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <form>
+                        <input type="text" name="fullname" id="fullname" placeholder="Full Name" required/><br>
+                        <input type="text" name="email" id="email" placeholder="Email Address" required/><br>
+                        <select name="enquiry" id="enquiry" required>
+                            <option selected >What is your message about?</option>
+                            <option>Accounts</option>
+                            <option>Business Enquiry</option>
+                            <option>Error on Site</option>
+                            <option>Report someone</option>
+                            <option>Other</option>
+                        </select><br>
+                        <input type="text" name="other" id="other" placeholder="If Other Please Specify"/>
+                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
                 </div>
             </div>
         </div>
-    </div>        
-    
-    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"></button>
-    -->
-
-
-    <!--JavaScriptCDN-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </div>
 </body>
 
 </html>
