@@ -131,7 +131,7 @@
                     <h4 class="modal-title" id="myModalLabel">Get In Touch</h4>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form action="mailto:daniel@dancodes.co.uk" method="POST" enctype="multipart/form-data">
                         <input type="text" name="fullname" id="fullname" placeholder="Full Name" required/><br><br>
                         <input type="text" name="email" id="email" placeholder="Email Address" required/><br><br>
                         <select name="enquiry" id="enquiry" required>
@@ -142,12 +142,13 @@
                             <option>Report someone</option>
                             <option>Other</option>
                         </select><br><br>
-                        <input type="text" name="other" id="other" placeholder="If Other Please Specify"/>
+                        <input type="text" name="other" id="other" placeholder="If Other Please Specify" /><br><br>
+                        <textarea rows="4" cols="20" type="text" name="message" id="message" placeholder="Enter your message" /></textarea><br><br>
+                        <input type="submit" name="submit" id="submit" value="Send" />
+                        <input type="button" name="close" id="close" data-dismiss="modal" value="X" />
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Submit</button>
                 </div>
             </div>
         </div>
